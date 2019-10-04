@@ -3,8 +3,9 @@
 
 //passive running
 for(var i =0 ; i< instance_count; i++){
-	if (instance_id[i] != id and place_meeting(x,y,instance_id[i]){
-		
+	if (instance_id[i] != id and place_meeting(x,y,instance_id[i])){
+		image_angle += (360 - point_direction(x,y,instance_id[i].x,instance_id[i].y))/4
+		direction = image_angle
 	}
 }
 //state machine interaction
@@ -23,7 +24,7 @@ else if(state = states.moveto){
 	direction = image_angle
 	script_execute(CurveMove,tox,toy,7,startx,starty)
 	
-	if(mouse_check_button(mb_left)&&point_distance(x,y,mouse_x,mouse_y)>3){
+	if(mouse_check_button(mb_left)&&point_distance(x,y,mouse_x,mouse_y)>10){
 		startx = x
 		starty = y
 		tox = mouse_x
