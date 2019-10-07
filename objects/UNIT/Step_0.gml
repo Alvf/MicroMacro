@@ -4,10 +4,13 @@
 //passive running
 for(var i =0 ; i< instance_count; i++){
 	if (instance_id[i] != id and place_meeting(x,y,instance_id[i])){
-		image_angle += (360 - point_direction(x,y,instance_id[i].x,instance_id[i].y))/4
-		direction = image_angle
+		
+		instance_id[i].x+=2*cos(degtorad(point_direction(x,y,instance_id[i].x,instance_id[i].y)))
+		instance_id[i].y+=2*sin(degtorad(point_direction(x,y,instance_id[i].x,instance_id[i].y)))
+		
 	}
 }
+
 //state machine interaction
 if(state = states.idle){
 	if(mouse_check_button(mb_left)){
