@@ -5,8 +5,8 @@
 for(var i =0 ; i< instance_count; i++){
 	if (instance_id[i] != id and place_meeting(x,y,instance_id[i])){
 		
-		instance_id[i].x+=2*cos(degtorad(point_direction(x,y,instance_id[i].x,instance_id[i].y)))
-		instance_id[i].y+=2*sin(degtorad(point_direction(x,y,instance_id[i].x,instance_id[i].y)))
+		instance_id[i].x+=cos(degtorad(point_direction(x,y,instance_id[i].x,instance_id[i].y)))
+		instance_id[i].y+=sin(degtorad(point_direction(x,y,instance_id[i].x,instance_id[i].y)))
 		
 	}
 }

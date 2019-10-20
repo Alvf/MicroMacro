@@ -213,6 +213,14 @@
                 "resourcePath": "views\\f492573c-fe07-4eec-821a-ffb466e47e59.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "fe2e77e6-5515-48fc-a61f-c8666e8cab43",
+            "Value": {
+                "id": "835bd5be-a36c-4dfb-8fae-f29f9e81b854",
+                "resourcePath": "sprites\\sprite1\\sprite1.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "script_order": [
